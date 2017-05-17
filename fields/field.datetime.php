@@ -845,7 +845,7 @@
 			);
 		}
 
-		public function buildSortingSQL(&$joins, &$where, &$sort, $order = 'ASC'){
+		public function buildSortingSQL(&$joins, &$where, &$sort, $order = 'ASC', &$select = null) {
 			$field_id = $this->get( 'id' );
 			$order    = strtolower( $order );
 			
